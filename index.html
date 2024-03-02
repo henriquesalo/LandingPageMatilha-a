@@ -5,12 +5,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/index.css">
     <link rel="shortcut icon" href="img/favicon.ico" />
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+    <!-- Page Title -->
     <title>Matilhaça</title>
   </head>
   
@@ -24,27 +25,26 @@
         <a href="index.html"><img src="img/Logo5.png"></a>
       </li>
       <li class="nav-item">
-        <a href="#esportes">Esportes</a>
+        <a href="pages/sports.html">Esportes</a>
       </li>
       <li class="nav-item">
-        <a href="#diretoria">Diretoria</a>
+        <a href="pages/direction.html">Diretoria</a>
       </li>
       <li class="nav-item">
-        <a href="#loja">Loja</a>
+        <a href="pages/shop.html">Loja</a>
       </li>
       <li class="nav-item">
-        <a href="#seja">Seja Diretor</a>
+        <a href="pages/join.html">Seja Diretor</a>
       </li>
       <li class="nav-item">
-        <a href="#eventos">Eventos</a>
+        <a href="pages/events.html">Eventos</a>
       </li>
       <li class="nav-item">
-        <a href="#parceiros">Parceiros</a>
+        <a href="pages/partners.html">Parceiros</a>
       </li>
       <li class="nav-item-search">
         <form action="/search" method="get">
-          <input type="text" placeholder="Pesquisar..." name="q">
-          <button type="submit">Buscar</button>
+          <input class="SearchBar" type="text" placeholder="Pesquisar..." name="q">
         </form>
       </li>
     </ul>
@@ -59,7 +59,7 @@
           <img src="img/Rectangle17.png" class="d-block w-100" alt="camisa">
         </div>
         <div class="carousel-item">
-          <img src="img/Rectangle17.png" class="d-block w-100" alt="food">
+          <img src="img/colecao-banner.jpg" class="d-block w-100" alt="colecao-banner">
         </div>
         <div class="carousel-item">
           <img src="img/Rectangle17.png" class="d-block w-100" alt="food">
@@ -103,6 +103,50 @@
       <img src="img/Line 15.png" alt="line2">
     </div>
 
+    <div class="carousel-direction">
+      <div class="images">
+          <div class="image">
+            <img src="img/presida.png">
+            <p>PRESIDENTE</p>
+            <p class="name">Piauí</p>
+          </div>
+
+          <div class="image">
+            <img src="img/vice1.png">
+            <p>VICE-PRESIDENTE</p>
+            <p class="name">Salomão</p>
+          </div>
+
+          <div class="image">
+            <img src="img/vice2.png">
+            <p>VICE-PRESIDENTE</p>
+            <p class="name">Gordão</p>
+          </div>
+
+          <div class="image">
+            <img src="img/diretorGeral.png">
+            <p>DIRETOR GERAL</p>
+            <p class="name">Kaio</p>
+          </div>
+      </div>
+      <div class="controls">
+          <div class="control prev"> Anterior </div>
+          <div class="control next"> Próximo </div>
+      </div>
+    </div>
+    <div class="text-direction">
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+        A quos, voluptatum illum mollitia dolores libero placeat 
+        nesciunt quasi adipisci impedit!Lorem ipsum dolor sit, 
+        amet consectetur adipisicing elit. 
+        A quos, voluptatum illum mollitia dolores libero placeat 
+        nesciunt quasi adipisci impedit!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+        A quos, voluptatum illum mollitia dolores libero placeat 
+        nesciunt quasi adipisci impedit!Lorem ipsum dolor sit.
+      </p>
+    </div>
   </section>
 
 <!-- SPORTS SECTION -->
@@ -125,26 +169,32 @@
         A quos, voluptatum illum mollitia dolores libero placeat 
         nesciunt quasi adipisci impedit!Lorem ipsum dolor sit.
       </p>
-
+      
       <img class="esportesImg" src="img/matilhaca.jpg" alt="esportes">
     </div>
-    <button>SAIBA MAIS</button>
+
+    <div class="containerImg">
+      <button>SAIBA MAIS</button>
+    </div>
+
   </section>
 
 <!-- FOOTER SECTION -->
   <div class="footer-container">
     <div class="icons" width="90px" height="90px">
-      <img src="img/TikTok.png" alt="tiktok" >
-      <img src="img/WhatsApp.png" alt="whatsapp">
-      <img src="img/Instagram.png" alt="instagram">
-      <img src="img/Discord New.png" alt="discord">
-      <img src="img/Twitch.png" alt="twitch">
+      <a href="#"><img src="img/TikTok.png" alt="tiktok" ></a>
+      <a href="#"><img src="img/WhatsApp.png" alt="whatsapp"></a>
+      <a href="https://www.instagram.com/matilhacaucb/"><img src="img/Instagram.png" alt="instagram"></a>
+      <a href="https://discord.gg/bn7s3dufZ8"><img src="img/Discord New.png" alt="discord"></a>
+      <a href="#"><img src="img/Twitch.png" alt="twitch"><a>
     </div>
-
+    <br>
     <p>COPYRIGHT GESTAO 2024</p>
   </div>
 
   <!-- Optional JavaScript -->
+  <script src="scripts/scriptCarouselDirection.js"></script>
+
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
