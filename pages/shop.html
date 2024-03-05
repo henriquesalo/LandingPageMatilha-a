@@ -58,93 +58,177 @@
   </div>
 </section>
 
+<!-- POPUP CLOTHES -->
+<div class="popup" id="popup" onclick="closePopup()">
+  <div class="popup-content" onclick="event.stopPropagation()">
+    <div class="popup-image">
+      <img id="popup-image" src="" alt="Product">
+    </div>
+    <div class="popup-info">
+      <h2 id="popup-title"></h2>
+      <p id="popup-price"></p>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Tamanho</th>
+            <th>Altura</th>
+            <th>Largura</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>3P</td>
+            <td>73</td>
+            <td>50</td>
+          </tr>
+          <tr>
+            <td>PP</td>
+            <td>75</td>
+            <td>53</td>
+          </tr>
+          <tr>
+            <td>P</td>
+            <td>77</td>
+            <td>56</td>
+          </tr>
+          <tr>
+            <td>M</td>
+            <td>79</td>
+            <td>59</td>
+          </tr>
+          <tr>
+            <td>G</td>
+            <td>81</td>
+            <td>61</td>
+          </tr>
+          <tr>
+            <td>GG</td>
+            <td>83</td>
+            <td>64</td>
+          </tr>
+          <tr>
+            <td>3G</td>
+            <td>85</td>
+            <td>67</td>
+          </tr>
+          <tr>
+            <td>4G</td>
+            <td>87</td>
+            <td>70</td>
+          </tr>
+          <tr>
+            <td>5G</td>
+            <td>89</td>
+            <td>73</td>
+          </tr>
+        </tbody>
+      </table>
+      <button id="popup-button">Finalizar Compra</button>
+    </div>
+    <button class="popup-close" onclick="closePopup()">Fechar</button>
+  </div>
+</div>
+
 <!-- PRODUCTS SECTION -->
 <section class="products-container">
   <div>
     <div class="container-product">
       <div class="row">
-          <div class="product">
-              <img src="https://via.placeholder.com/300" alt="Product">
-              <div class="product-info">
+          <div class="product" onclick="openPopup('SILVER DOG', 'EM BREVE', '../img/products/prata/prata-frente.jpg')">
+            <img src="../img/products/prata/prata-frente.jpg" alt="Product">
+            <img class="product-back" src="../img/products/prata/prata-verso.jpg" alt="ProductBack">
+            <div class="product-info">
                   <div class="product-title">SILVER DOG</div>
                   <div class="product-price">EM BREVE</div>
               </div>
           </div>
-          <div class="product">
-              <img src="https://via.placeholder.com/300" alt="Product">
-              <div class="product-info">
-                  <div class="product-title">RUBY DOG</div>
-                  <div class="product-price">EM BREVE</div>
-              </div>
+          <div class="product" onclick="openPopup('RUBY DOG', 'EM BREVE', '../img/products/rubi/frente.jpg')">
+            <img src="../img/products/rubi/frente.jpg" alt="Product">
+            <img class="product-back" src="../img/products/rubi/verso.jpg" alt="ProductBack">
+            <div class="product-info">
+                <div class="product-title">RUBY DOG</div>
+                <div class="product-price">EM BREVE</div>
+            </div>
           </div>
-          <div class="product">
-              <img src="https://via.placeholder.com/300" alt="Product">
-              <div class="product-info">
+          <div class="product" onclick="openPopup('FOR ALL THE DOGS', 'EM BREVE', '../img/products/Bege/frente.jpg')">
+            <img src="../img/products/Bege/frente.jpg" alt="Product">
+            <img class="product-back" src="../img/products/Bege/verso.jpg" alt="ProductBack">
+            <div class="product-info">
                   <div class="product-title">FOR ALL THE DOGS</div>
                   <div class="product-price">EM BREVE</div>
               </div>
           </div>
-          <div class="product">
-              <img src="https://via.placeholder.com/300" alt="Product">
-              <div class="product-info">
-                  <div class="product-title">WINE CROPPED</div>
-                  <div class="product-price">EM BREVE</div>
+
+          <div class="product" onclick="openPopup('WINE CROPPED', 'EM BREVE', '../img/products/previas/cropped.jpg')">
+            <img src="../img/products/previas/cropped.jpg" alt="Product">
+            <img class="product-back" src="../img/products/previas/cropped.jpg" alt="ProductBack">
+            <div class="product-info">
+                <div class="product-title">WINE CROPPED</div>
+                <div class="product-price">EM BREVE</div>
               </div>
           </div>
-          <div class="product">
-            <img src="https://via.placeholder.com/300" alt="Product">
+          <div class="product" onclick="openPopup('BLACK CROPPED', 'EM BREVE', '../img/products/previas/cropped.jpg')">
+            <img src="../img/products/previas/cropped.jpg" alt="Product">
+            <img class="product-back" src="../img/products/previas/cropped.jpg" alt="ProductBack">
             <div class="product-info">
-                <div class="product-title">BLACK CROPPED</div>
-                <div class="product-price">EM BREVE</div>
+              <div class="product-title">BLACK CROPPED</div>
+              <div class="product-price">EM BREVE</div>
             </div>
         </div>
-        <div class="product">
-          <img src="https://via.placeholder.com/300" alt="Product">
+        <div class="product" onclick="openPopup('CAMISETA TORCEDOR', 'R$ 70,00', '../img/products/previas/camiseta-torcedor.jpg')">
+          <img src="../img/products/previas/camiseta-torcedor.jpg" alt="Product">
+          <img class="product-back" src="../img/products/previas/camiseta-torcedor.jpg" alt="ProductBack">
           <div class="product-info">
-              <div class="product-title">CAMISETA TORCEDOR</div>
-              <div class="product-price">EM BREVE</div>
+            <div class="product-title">CAMISETA TORCEDOR</div>
+            <div class="product-price">R$ 70,00 / 75,00</div>
           </div>
         </div>
-        <div class="product">
-          <img src="https://via.placeholder.com/300" alt="Product">
+        <div class="product" onclick="openPopup('CANECA VERMELHA', 'R$ 35,00', '../img/products/caneca/vermelho/caneca-frente.jpg')">
+          <img src="../img/products/caneca/vermelho/caneca-frente.jpg" alt="Product">
+          <img class="product-back" src="../img/products/caneca/vermelho/caneca-verso.jpg" alt="ProductBack">
           <div class="product-info">
-              <div class="product-title">CANECA VERMELHA</div>
-              <div class="product-price">EM BREVE</div>
+            <div class="product-title">CANECA VERMELHA</div>
+            <div class="product-price">R$ 35,00</div>
           </div>
         </div>
-        <div class="product">
-          <img src="https://via.placeholder.com/300" alt="Product">
-          <div class="product-info">
+        <div class="product" onclick="openPopup('CANECA PRETA', 'R$ 35,00', '../img/products/caneca/preto/caneca-frente.jpg')">
+          <img src="../img/products/caneca/preto/caneca-frente.jpg" alt="Product">
+            <img class="product-back" src="../img/products/caneca/preto/caneca-trás.jpg" alt="ProductBack">
+            <div class="product-info">
               <div class="product-title">CANECA PRETA</div>
-              <div class="product-price">EM BREVE</div>
+              <div class="product-price">R$ 35,00</div>
           </div>
         </div>
-        <div class="product">
-          <img src="https://via.placeholder.com/300" alt="Product">
-          <div class="product-info">
+        <div class="product" onclick="openPopup('SAMBA DOLL', 'EM BREVE', '../img/products/previas/samba-doll.jpg')">
+          <img src="../img/products/previas/samba-doll.jpg" alt="Product">
+            <img class="product-back" src="../img/products/previas/samba-doll.jpg" alt="ProductBack">
+            <div class="product-info">
               <div class="product-title">SAMBA DOLL</div>
               <div class="product-price">EM BREVE</div>
           </div>
         </div>
-        <div class="product">
-          <img src="https://via.placeholder.com/300" alt="Product">
-          <div class="product-info">
+        <div class="product" onclick="openPopup('SAMBA CANÇÃO', 'EM BREVE', '../img/products/previas/samba-cancao.jpg')">
+          <img src="../img/products/previas/samba-cancao.jpg" alt="Product">
+            <img class="product-back" src="../img/products/previas/samba-cancao.jpg" alt="ProductBack">
+            <div class="product-info">
               <div class="product-title">SAMBA CANÇÃO</div>
               <div class="product-price">EM BREVE</div>
           </div>
         </div>
-        <div class="product">
-          <img src="https://via.placeholder.com/300" alt="Product">
-          <div class="product-info">
+        <div class="product" onclick="openPopup('TIRANTE', 'R$ 15,00', '../img/products/caneca/preto/tirante.jpg')">
+          <img src="../img/products/caneca/preto/tirante.jpg" alt="Product">
+            <img class="product-back" src="../img/products/caneca/vermelho/tirante.jpg" alt="ProductBack">
+            <div class="product-info">
               <div class="product-title">TIRANTE</div>
-              <div class="product-price">EM BREVE</div>
+              <div class="product-price">R$ 15,00</div>
           </div>
         </div>
-        <div class="product">
-          <img src="https://via.placeholder.com/300" alt="Product">
-          <div class="product-info">
+        <div class="product" onclick="openPopup('KIT CANECA + TIRANTE', 'R$ 45,00', '../img/products/caneca/preto/completo.jpg')">
+          <img src="../img/products/caneca/preto/completo.jpg" alt="Product">
+            <img class="product-back" src="../img/products/caneca/vermelho/kit-completo.jpg" alt="ProductBack">
+            <div class="product-info">
               <div class="product-title">KIT CANECA + TIRANTE</div>
-              <div class="product-price">EM BREVE</div>
+              <div class="product-price">R$ 45,00</div>
           </div>
         </div>
       </div>
@@ -164,6 +248,9 @@
   <br>
   <p>COPYRIGHT GESTAO 2024</p>
 </div>
+
+  <!-- Optional JavaScript -->
+  <script src="../scripts/scriptBuyProductPoput.js"></script>
 
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 

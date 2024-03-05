@@ -109,6 +109,7 @@ body{
     margin-bottom: 40px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
+    position: relative; /* Adicionado */
 }
 
 .product:hover {
@@ -134,6 +135,79 @@ body{
 .product-price {
     color: red;
 }
+
+.product-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.product:hover .product-back {
+    opacity: 1;
+}
+
+/*popup 1*/
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+  }
+
+  .popup-content {
+    display: flex;
+    flex-wrap: nowrap;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto; 
+    height: auto; 
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .popup-image img {
+    display: flex;
+    align-items: center;
+    max-height: 650px;
+  }
+  
+  .popup-info {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+  }
+  
+  .popup-button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .popup-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .popup-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
 
 @media (max-width: 1024px) {
     .product {
