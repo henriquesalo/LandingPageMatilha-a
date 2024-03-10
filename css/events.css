@@ -81,7 +81,23 @@ body{
 }
 
 
+/* EVENTS SECTION */
 
+.Events{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.inf-Events h6{
+    display: flex;
+    font-family: 'Big Shoulders Text', cursive;
+    color: #ffffff;
+    font-size: 1.1em;
+    max-width: 750px;
+    text-align: justify;
+}
 
 
 
