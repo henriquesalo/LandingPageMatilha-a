@@ -80,15 +80,17 @@ body{
     background-color: black;
 }
 
+/* BANNER SECTION */
+.bannerImage img {
+    display: flex;
+    width: 100%;
+}
 
 /* EVENTS SECTION */
-
 .Events{
     display: flex;
     justify-content: center;
 }
-
-
 
 .inf-Events h6{
     display: flex;

@@ -80,10 +80,81 @@ body{
     background-color: black;
 }
 
+/* BANNER SECTION */
+.bannerSport img {
+    display: flex;
+    width: 100%;
+}
 
+/* CONTENT SECTION*/
+.title {
+    display: flex;
+    font-family: 'Big Shoulders Text';
+    color: #ffffff;
+    font-size: 1.1em;
+    text-align: justify;
+    padding: 25px;
+    justify-content: center;
+}
 
+.SportsContent {
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+}
 
+.content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
 
+.content p {
+    display: flex;
+    font-family: 'Big Shoulders Text';
+    color: #ffffff;
+    font-size: 1.1em;
+    max-width: 750px;
+    text-align: justify;
+}
+
+/* ATTENTION SECTION */
+.attentionContent {
+    padding: 25px;
+    font-family: 'Big Shoulders Text';
+    color: #ffffff;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+.attention {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.attention p {
+    font-family: 'Big Shoulders Text';
+    color: #ffffff;
+    font-size: 1.1em;
+    max-width: 750px;
+    text-align: center;
+}
+
+.attention img {
+    width: 30%;
+}
+
+.showmore button {
+    border-radius: 10px;
+    color: white;
+    background-color: red;
+    font-family: 'Big Shoulders Text', cursive;
+    text-transform: uppercase;
+    box-shadow: none;
+    border: none;
+}
 
 /* FOOTER SECTION */
 .footer-container{
