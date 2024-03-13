@@ -6,19 +6,19 @@ from email.mime.multipart import MIMEMultipart
 # Configurações do servidor SMTP
 smtp_server = 'smtp.gmail.com'
 port = 587
-sender_email = os.getenv('solamaeslol@gmail.com')
-password = os.getenv('xjhi lrdp pygv bzke')
+sender_email = os.getenv('SENDER_EMAIL')
+password = os.getenv('EMAIL_PASSWORD')
 
 # Destinatário e mensagem
 receiver_email = 'mattsnbk@gmail.com'
 subject = 'Inscrição Para Diretoria'
-body = """
-Nome: {}
-Cargo: {}
-Email: {}
-Curso: {}
-Motivo: {}
-""".format(nome, cargo, email, curso, motivo) 
+body = f"""
+Nome: {nome}
+Cargo: {cargo}
+Email: {email}
+Curso: {curso}
+Motivo: {motivo}
+"""
 
 # Configuração do email
 message = MIMEMultipart()
