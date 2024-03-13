@@ -51,7 +51,47 @@
     </nav>
   </section>
 
+<!-- BANNER SECTION -->
+<section class="banner">
+  <div class="bannerImage">
+    <img src="../img/joinUs/BannerJoin.png" alt="BannerJoinUs">
+  </div>
+</section>
 
+<!-- CONTENT SECTION -->
+<section class="content">
+  <div class="container">
+    <h2>Formulário de Inscrição</h2>
+    <form id="meuFormulario" action="../processar_formulario.php" method="post">
+      <div class="form-group">
+        <label for="nome">Nome:</label>
+        <input type="text" class="form-control" id="nome" name="nome" required>
+      </div>
+      <div class="form-group">
+        <label for="cargo">Cargo:</label>
+        <select class="form-control" id="cargo" name="cargo" required>
+          <option value="diretor_esportivo">Diretor Esportivo</option>
+          <option value="produtos">Produtos</option>
+          <option value="marketing">Marketing</option>
+          <option value="eventos">Eventos</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="curso">Curso:</label>
+        <input type="text" class="form-control" id="curso" name="curso" required>
+      </div>
+      <div class="form-group">
+        <label for="motivo">Porque quer entrar na diretoria:</label>
+        <textarea class="form-control" id="motivo" name="motivo" rows="3" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+  </div>
+</section>
 
 <!-- FOOTER SECTION -->
 <div class="footer-container">
@@ -65,6 +105,9 @@
   <br>
   <p>COPYRIGHT GESTAO 2024</p>
 </div>
+
+<!-- Optional JavaScript -->
+<script src="../scripts/scriptPopupForm.js"></script>
 
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
