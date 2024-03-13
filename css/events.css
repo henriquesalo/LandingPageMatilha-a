@@ -80,6 +80,7 @@ body{
     background-color: black;
 }
 
+
 /* BANNER SECTION */
 .bannerImage img {
     display: flex;
@@ -98,13 +99,42 @@ body{
     color: #ffffff;
     font-size: 1.1em;
     max-width: 750px;
-    text-align: justify;
+    text-align: center;
+    padding: 100px 100px;
+}
+
+/* CONTENT SECTION */
+.Events-content {
+    padding: 25px;
+    font-family: 'Big Shoulders Text';
+    color: #ffffff;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+.contents {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.contents p {
+    font-family: 'Big Shoulders Text';
+    color: #ffffff;
+    font-size: 1.1em;
+    max-width: 750px;
+    text-align: center;
+}
+
+.contents img {
+    width: 35%;
 }
 
 
 
 /* FOOTER SECTION */
-.footer-container{
+.footer-container {
     padding: 100px 100px;
     background-color: black;
 }
