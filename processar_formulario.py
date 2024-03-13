@@ -1,12 +1,13 @@
 import smtplib
+import os
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
 # Configurações do servidor SMTP
 smtp_server = 'smtp.gmail.com'
 port = 587
-sender_email = 'solamaeslol@gmail.com'
-password = 'xjhi lrdp pygv bzke'
+sender_email = os.getenv('solamaeslol@gmail.com')
+password = os.getenv('xjhi lrdp pygv bzke')
 
 # Destinatário e mensagem
 receiver_email = 'mattsnbk@gmail.com'
