@@ -1,21 +1,37 @@
-const carousel = document.querySelector('.carousel-direction');
-    const images = carousel.querySelector('.images');
-    const prevBtn = carousel.querySelector('.prev');
-    const nextBtn = carousel.querySelector('.next');
+document.addEventListener('DOMContentLoaded', function() {
+    const carousel = document.getElementById('carousel');
+    const images = carousel.querySelectorAll('.image');
+    const prevBtn = carousel.querySelector('.control.prev');
+    const nextBtn = carousel.querySelector('.control.next');
     let currentIndex = 0;
-    const slideWidth = 100; // Width of each slide (90px + 10px margin)
 
-    function goToSlide(index) {
-        if (index < 0 || index >= images.children.length) return;
-        currentIndex = index;
-        const offset = -slideWidth * currentIndex;
-        images.style.transform = `translateX(${offset}px)`;
+    function showImages(startIndex) {
+        for (let i = 0; i < images.length; i++) {
+            const image = images[i];
+            if (i >= startIndex && i < startIndex + 4) {
+                image.style.display = 'block';
+            } else {
+                image.style.display = 'none';
+            }
+        }
     }
 
-    prevBtn.addEventListener('click', () => {
-        goToSlide(currentIndex - 1);
-    });
+    function nextImages() {
+        if (currentIndex + 4 < images.length) {
+            currentIndex += 4;
+            showImages(currentIndex);
+        }
+    }
 
-    nextBtn.addEventListener('click', () => {
-        goToSlide(currentIndex + 1);
-    });
+    function prevImages() {
+        if (currentIndex >= 4) {
+            currentIndex -= 4;
+            showImages(currentIndex);
+        }
+    }
+
+    prevBtn.addEventListener('click', prevImages);
+    nextBtn.addEventListener('click', nextImages);
+
+    showImages(currentIndex);
+});
