@@ -4,7 +4,8 @@ const mail = document.getElementById('email').value;
 const curso = document.getElementById('curso').value;
 const motivo = document.getElementById('motivo').value;
 
-Email.send({
+if(nome && cargo && mail && curso && motivo) {
+  Email.send({
     Host : "smtp.yourisp.com",
     Username : "enviaremailmatilhaca@gmail.com",
     Password : "26430274431CA893425C09EC80395BCF6221",
@@ -13,6 +14,10 @@ Email.send({
     Subject : "INSCRIÇÃO PARA DIRETORIA",
     Body : `Nome: ${nome} \n cargo: ${cargo} \n email: ${mail} \n 
             curso: ${curso} \n motivo: ${motivo} `,
-}).then(
-  message => alert('Inscrição realizada com sucesso! Aguarde que entraremos em contato.')
-);
+  }).then(() => {
+    alert('Inscrição realizada com sucesso! Aguarde que entraremos em contato.');
+    location.reload();
+  });
+} else {
+  alert('Preencha todos os campos!');
+}
