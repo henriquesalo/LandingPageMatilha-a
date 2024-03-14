@@ -8,7 +8,7 @@ Email.send({
     Host : "smtp.yourisp.com",
     Username : "enviaremailmatilhaca@gmail.com",
     Password : "26430274431CA893425C09EC80395BCF6221",
-    To : 'matilhaça@gmail.com',
+    To : 'matilhaca@gmail.com',
     From : "enviaremailmatilhaca@gmail.com",
     Subject : "INSCRIÇÃO PARA DIRETORIA",
     Body : `Nome: ${nome} \n cargo: ${cargo} \n email: ${mail} \n 
