@@ -11,10 +11,10 @@ function sendMail(e) {
 
   if(nome && cargo && mail && curso && motivo) {
     Email.send({
-      Host : "smtp.yourisp.com",
+      Host : "smtp.elasticemail.com",
       Username : "enviaremailmatilhaca@gmail.com",
       Password : "26430274431CA893425C09EC80395BCF6221",
-      To : 'matilhaca@gmail.com',
+      To : 'henriquesalomaodev@gmail.com',
       From : "enviaremailmatilhaca@gmail.com",
       Subject : "INSCRIÇÃO PARA DIRETORIA",
       Body : `Nome: ${nome} \n cargo: ${cargo} \n email: ${mail} \n 
