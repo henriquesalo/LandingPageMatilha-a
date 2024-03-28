@@ -33,6 +33,10 @@ body{
     font-weight: 300;
 }
 
+#bloqueados {
+    color: red;
+}
+
 .nav-item a{ 
     padding-top: 20px;
 }
@@ -229,7 +233,7 @@ body{
 
 /* FOOTER SECTION */
 .footer-container{
-    padding: 100px 100px;
+    padding: 50px 50px;
     background-color: black;
 }
 
@@ -239,15 +243,16 @@ body{
     color: white;
     font-family: 'Big Shoulders Text', cursive;
     text-transform: uppercase;
-    font-size: 1.3em;
+    font-size: 1.1em;
 }
 
 .icons {
     display: flex;
     justify-content: center;
-    gap: 100px;
+    /* gap: 100px; */
 }
 
 .icons img {
     cursor: pointer;
+    width: 70%;
 }
